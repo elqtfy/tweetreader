@@ -1,0 +1,27 @@
+{
+  "name": "Tweet Reader",
+  "version": "0",
+  "description": "Reads tweets that you activate",
+  "permissions": [
+    "*://*.twitter.com/*",
+    "tts",
+    "tabs"
+  ],
+
+  "background": {
+    "scripts": [
+      "tabs.js",
+      "background.js"
+    ]
+  },
+
+  "browser_action": {
+    "default_title": "Tweet reader"
+  },
+
+  "options_page": "options.html",
+
+  "minimum_chrome_version": "14",
+
+  "manifest_version": 2
+}
